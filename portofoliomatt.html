@@ -1,0 +1,363 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Study Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <!-- Icon Bootstrap -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <style type="text/css">
+      .jumbotron {
+        padding-top: 6rem;
+        background: linear-gradient(188deg, rgba(47, 143, 155, 0.25) 0%, rgba(47, 143, 155, 0) 100%);
+      }
+      #project {
+        background-color: #e2edff;
+      }
+      .bege {
+        background-color: #e2edff;
+      }
+      section {
+        padding-top: 6rem;
+      }
+
+      /* My Keyboard Section */
+      .keyboard-box {
+        position: relative;
+        background-color: #0C6EFD;
+        border-radius: 35px;
+        height: 400px;
+      }
+
+      .keyboard-box::before {
+        content: 'My Key';
+        position: absolute;
+        color: #fff;
+        font-size: 50px;
+        font-weight: bold;
+        font-style: italic;
+        top: 22px;
+        left: -100px;
+        opacity: 0;
+        transition: 0.5s;
+      }
+
+      .keyboard-box:hover::before {
+        left: 50%;
+        transform: translate(-50%, 0);
+        opacity: 0.3;
+      }
+
+      .keyboard-name {
+        content: 'NOIR N1V3';
+        position: absolute;
+        margin-top: 260px;
+        top: 0px;
+        width: 100%;
+        color: #fff;
+        text-align: center;
+        font-size: 3.5em;
+        opacity: 0;
+        transition: 0.6s;
+        font-style: italic;
+      }
+
+      .keyboard-box:hover .keyboard-name {
+        left: 50%;
+        transform: translate(-50%, 0);
+        opacity: 0.4;
+      }
+
+      .keyboard-detail-button {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-50%, 0);
+        opacity: 0;
+        transition: 0.5s;
+      }
+
+      .keyboard-box:hover .keyboard-detail-button {
+        opacity: 1;
+        bottom: 20px;
+      }
+
+      .keyboard-img {
+        margin-top: 50px;
+        margin-left: 3px;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        color: #fff;
+        text-align: center;
+        font-size: 2em;
+        opacity: 0;
+        transition: 0.6s;
+      }
+      
+      .keyboard-box:hover .keyboard-img {
+        top: 8px;
+        opacity: 1;
+      }
+      
+    </style>
+  </head>
+  <body>
+   <!-- Awal Navbar -->
+   <nav class="navbar navbar-expand-lg navbar-dark bg-secondary shadow fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Rahmat Hidayat Sianturi <i class="bi bi-twitter"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skill">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#project">Project</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#kontak">Contack</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Akhir Navbar -->
+
+
+  <!-- Bagian Jumbotron-->
+  <section class="foto text-center jumbotron">
+  <img style="width: 280px; height: 280px;" src="rahmat.jpeg" class="rounded mx-auto d-block rounded-circle border border-5 shadow " alt="...">
+  <h1 class="display-4 text-center">RAHMAT HIDAYAT SIANTURI</h1>
+  <p style="font-size: 25px;" class="lead text-center">Pelajar | Web & Front End Development</p>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,128L34.3,160C68.6,192,137,256,206,245.3C274.3,235,343,149,411,106.7C480,64,549,64,617,101.3C685.7,139,754,213,823,213.3C891.4,213,960,139,1029,138.7C1097.1,139,1166,213,1234,218.7C1302.9,224,1371,160,1406,128L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+  </section>  
+  <!-- Akhir Jumbotron -->
+
+  <!-- Skills -->
+  <section id="skill">
+    <div class="container">
+      <div class="row text-center mb-3">
+        <div class="col">
+          <h2>About Me</h2>
+        </div>
+      </div>
+      <div class="row justify-content-between fs-5 text-center">
+        <div class="col-md-5 mb-2">
+          Project & Kegiatan yang pernah diikuti :<br />
+          membuat web form login, Desain figma Kursus Online.
+          Webinar dari Universitas Amikom & Lomba webinar Microsoft,
+          Project Membuat website animasi game roblox disisipkan js.
+        </div>
+        <div class="col-md-2">
+          Skill yang sudah diikuti :<br />
+          Html, C++, Css, Java, Java Script baru sedikit, Figma Microsoft Excel. 
+        </div>
+     </div>
+    </div>
+  </section>
+  <!-- Akhir Skill -->
+
+  <!-- Awal Project -->
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e2edff" fill-opacity="1" d="M0,32L21.8,32C43.6,32,87,32,131,69.3C174.5,107,218,181,262,197.3C305.5,213,349,171,393,144C436.4,117,480,107,524,101.3C567.3,96,611,96,655,128C698.2,160,742,224,785,245.3C829.1,267,873,245,916,208C960,171,1004,117,1047,101.3C1090.9,85,1135,107,1178,144C1221.8,181,1265,235,1309,218.7C1352.7,203,1396,117,1418,74.7L1440,32L1440,320L1418.2,320C1396.4,320,1353,320,1309,320C1265.5,320,1222,320,1178,320C1134.5,320,1091,320,1047,320C1003.6,320,960,320,916,320C872.7,320,829,320,785,320C741.8,320,698,320,655,320C610.9,320,567,320,524,320C480,320,436,320,393,320C349.1,320,305,320,262,320C218.2,320,175,320,131,320C87.3,320,44,320,22,320L0,320Z"></path></svg>
+  <section id="project">
+    <div class="container">
+      <div class="row text-center mb-3">
+        <div class="col">
+          <h2>My Project</h2>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <!-- Card 1 -->
+        <div class="col-md-4 mb-3">
+        <div class="card" style="width: 18rem;" >
+          <img src="portofoliofav.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Desain Portofolio</h5>
+            <p class="card-text">Ini adalah salah satu contoh desain portofolio menarik yang pernah saya lihat <br />
+            Saya sangat berkeinginan bisa membuat desain portofolio seperti itu</p>
+            <a href="https://taufikhdyt.com/" class="btn btn-primary">Visit Link</a>
+          </div>
+          </div>
+        </div>
+        <!-- Card 2 -->
+        <div class="col-md-4 mb-3">
+        <div class="card" style="width: 18rem;">
+          <img src="figma2.png" class="card-img-top" alt="">
+          <div class="card-body">
+            <h5 class="card-title">Project Figma</h5>
+            <p class="card-text">Tugas UI/UX membuat Landing page Kursus Online</p>
+          </div>
+          <div class="card-body">
+            <a href="https://youtube.com/channel/UCvDVgOR-r3G4_KhGSK7zIgg" class="card-link">Youtube Me</a>
+            <a href="#" class="card-link">Another link</a>
+          </div>
+        </div>
+        </div>
+        <!-- Card 3 -->
+        <div class="col-md-4 mb-3">
+          <div class="card" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Contact Me</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Deskripsi</h6>
+              <p class="card-text">Silahkan Yang mau tanya' atau curhat bisa chat ke link whatsapp yang tertara</p>
+              <a href="https://instagram.com/snturi_10" class="card-link">Instagram Me</a>
+              <a href="https://wa.me/6288227719583" class="card-link">Whatsap Me</a>
+            </div>
+          </div>
+        </div>
+     </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,96L34.3,96C68.6,96,137,96,206,112C274.3,128,343,160,411,149.3C480,139,549,85,617,58.7C685.7,32,754,32,823,69.3C891.4,107,960,181,1029,192C1097.1,203,1166,149,1234,117.3C1302.9,85,1371,75,1406,69.3L1440,64L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+  </section>
+  <!-- Akhir Project -->
+
+ <!-- Card Link -->
+ <div class="row justify-content-evenly">
+ <div class="card border-primary mb-3" style="width: 18rem;">
+  <img src="Pak Hanif.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle text-center text-primary" href="#" style="cursor: progress;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Biodata Me
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+</div>
+
+<div class="card border-primary mb-3" style="width: 18rem;">
+  <img src="Pak Hanif.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle text-center text-primary" href="#" style="cursor: progress;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Biodata Me
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+</div>
+
+<div class="card border-primary mb-3" style="width: 18rem;">
+  <img src="Pak Hanif.jpg" class="card-img-top" alt="...">
+  <div class="card-body">
+    <h5 class="card-title">Card title</h5>
+    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle text-center text-primary" href="#" style="cursor: progress;" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Biodata Me
+      </a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Action</a></li>
+        <li><a class="dropdown-item" href="#">Another action</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Something else here</a></li>
+      </ul>
+</div>
+
+</div>
+
+<section id="my-keyboards">
+  <div class="container">
+      <div class="row">
+
+         <div class="col">
+           <h2 class="text-center">My Favorite Keyboards</h2>
+         </div>   
+
+      </div>
+      <div class="row">
+         <div class="col-md-6 col-lg-4 mb-3">
+            <div class="keyboard-box">
+              <h4 class="keyboard-name">NOIR
+              N1V3</h4>
+              <img src="keyboard/keyboard_berwarna-removebg-preview.png" alt="Noir N1v3" width="230" height="230" class="keyboard-img">
+              <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
+            </div>
+         </div>
+      </div>
+
+      <div class="row noir-2">
+        <div class="col-md-6 col-lg-4 mb-3">
+           <div class="keyboard-box">
+             <h4 class="keyboard-name">NOIR
+             N1V3</h4>
+             <img src="keyboard/keyboard_berwarna-removebg-preview.png" alt="Noir N1v3" width="230" height="230" class="keyboard-img">
+             <a href="#" class="btn btn-light keyboard-detail-button">Show Details</a>
+           </div>
+        </div>
+     </div>
+
+  </div>
+</section>
+
+  <!-- Akhir Card Link -->
+
+  <!-- Awal Kontak -->
+  <section  id="kontak">
+    <div class="container">
+      <div class="row text-center mb-3">
+        <div class="col">
+          <h2>Tinggalkan Pesan disini</h2>
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Name</label>
+        <input type="name" class="form-control" id="exampleFormControlInput1" placeholder="Rahmat Hidayat Sianturi">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlInput1" class="form-label">Email</label>
+        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="rahmat@example.com">
+      </div>
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="apa saja. selagi sopan, saya respon!!" rows="3"></textarea>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+        <label class="form-check-label" for="flexCheckDefault">
+        Doubt
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+        <label class="form-check-label" for="flexCheckChecked">
+          Ready
+        </label>
+      </div>
+      <input class="btn btn-primary" type="button" value="Send">
+      <input class="btn btn-danger" type="reset" value="Clear">
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e2edff" fill-opacity="1" d="M0,96L34.3,96C68.6,96,137,96,206,112C274.3,128,343,160,411,149.3C480,139,549,85,617,58.7C685.7,32,754,32,823,69.3C891.4,107,960,181,1029,192C1097.1,203,1166,149,1234,117.3C1302.9,85,1371,75,1406,69.3L1440,64L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z"></path></svg>
+    <div class="atas text-center fw-bold bege p-5">© Copyright <a style="color: black;" href="https://instagram.com/snturi_10"> Rahmat Hidayat Sianturi</a></div>
+  </section>
+  <!-- Akhir Input -->
+
+ 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
+</html>
